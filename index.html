@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz Temporizado - PrepTEC </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonte  -->
+    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Botão de Início -->
+    <div class="start_btn">
+
+        <button> Começar Teste </button>
+
+    </div>
+
+    <!-- Box de informação -->
+    <div class="info_box">
+
+        <div class="info_title">
+            <span> Regras deste teste... </span>
+        </div>
+
+        <div class="info_list">
+            <div class="info"> <b> 1. </b> Você vai ter o <span> tempo limitado </span> de acordo com sua escolha (Planejamento de Horas). </div> <br>
+            <div class="info"> <b> 2. </b> Quando você enviar uma resposta, não poderá voltar atrás, seja cuidadoso.</div> <br>
+            <div class="info"> <b> 3. </b> Assim como Vestibulinho, as questões aqui não são fáceis, tenha o máximo de concentração. </div> <br>
+            <div class="info"> <b> 4. </b> Você não pode sair enquanto estiver fazendo o teste, as questões serão zeradas.</div> <br>
+            <div class="info"> <b> 5. </b> Você vai conseguir pontuar em cada resposta que acertar, no fim, poderá ver o quanto você acertou.</div> <br>
+        </div>
+
+        <div class="buttons">
+
+            <button class="quit"> Sair </button>
+            <button class="restart"> Continuar </button>
+
+        </div>
+    </div>
+
+    <!-- Box do Teste -->
+
+    <div class="quiz_box">
+
+        <header>
+
+            <div class="title"></div>
+            <div class="timer">
+                <div class="time_text"> Tempo restante: </div>
+                <div class="timer_sec"> 15 </div>
+        </div>
+
+        </header>
+
+        <section>
+
+            <div class="que_text">
+
+                <span> O que significa a sigla HTML? </span>
+
+            </div>
+            <div class="option_list">
+
+                <div class="option">
+
+                    <span> Hyper Text Preprocessor </span>
+                    <div class="icon tick"><ion-icon name="checkmark-outline"></ion-icon></div>
+
+                </div>
+                <div class="option">
+
+                    <span> Hyper Text Markup Language </span>
+                    <div class="icon cross"><ion-icon name="close-outline"></ion-icon></div>
+
+                </div>
+                <div class="option">
+
+                    <span> Hyper Text Multiple Language </span>                    
+
+                </div>
+                <div class="option">
+
+                    <span> Hyper Text Multi Language </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Footer da Box do Teste -->
+
+        <footer>
+
+            <div class="total_que">
+
+                <span><p style="font-weight: bold;"> 2 </p> de <p style="font-weight: bold;"> 5 </p> questões. </span>
+
+            </div>
+
+            <button class="next_btn"> Próxima Questão </button>
+
+        </footer>
+        
+    </div>
+    
+    <!-- Resultados na Box -->
+
+    <div class="result_box">
+
+        <div class="icon">
+            <ion-icon name="school-outline"></ion-icon>
+        </div>
+        <div class="complete_text"> Você completou o teste! </div>
+
+        <div class="score_text">
+            <span> Você acertou apenas <p> 2 </p> de <p> 5 </p> questões. </span>
+        </div>
+        <div class="buttons">
+            <button class="restart"> Refazer </button>
+            <button class="quit"> Sair </button>
+        </div>
+
+    </div>
+
+    <!-- Import do Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
